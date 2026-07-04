@@ -10,10 +10,10 @@
 <meta property="og:description" content="Especialistas en fuel injection y mecánica general. 4.9★ con 62 reseñas en Google.">
 <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFf1ZA6gC0Iy0gIL8KXr1T8NaHHTc6ZsDpSJqojU8FT14NRrYm-fxwrerGj0Reqq-KEi-HfkVQhpbvHpsiRnRIS25yfyFlVjgG2etC4K7jcXRZU4O2MQmDZ2zUQaadVBV_YB_Va=w1200-k-no">
 <meta property="og:locale" content="es_MX">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23181A20'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-style='italic' font-weight='700' font-size='58' fill='%23D42027' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23212120'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-style='italic' font-weight='700' font-size='58' fill='%23B01E24' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"AutoRepair","name":"Servicio Marpa Automotriz",
 "image":"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFf1ZA6gC0Iy0gIL8KXr1T8NaHHTc6ZsDpSJqojU8FT14NRrYm-fxwrerGj0Reqq-KEi-HfkVQhpbvHpsiRnRIS25yfyFlVjgG2etC4K7jcXRZU4O2MQmDZ2zUQaadVBV_YB_Va=w1200-k-no",
@@ -25,283 +25,281 @@
 </script>
 <style>
   /* ============================================================
-     SISTEMA DE DISEÑO "MARPA" — derivado de su logotipo real
-     Carbón #16181D (lona) · Rojo Marpa #D42027 · Rojo osc #9E1B26
-     Blanco #F5F5F5 · Acero #AEB6BF · motivo: silueta deportiva + speed-lines
-     Tipografía Saira Condensed itálica (eco del wordmark) + Inter
-     Estética deportiva/racing, MUCHA imagen, poco texto
+     SISTEMA DE DISEÑO "MARPA" — estética Tesla
+     Fondo carbón #212120 (igual al del logotipo → se funde)
+     Rojo Marpa #B01E24 (acento único) · Blanco #F4F4F4
+     Inter con pesos ligeros · MUCHO espacio negativo
+     Imágenes full-bleed · tipografía grande y limpia
      ============================================================ */
   :root{
-    --carbon:#16181D; --carbon-2:#1F232B; --carbon-3:#282D37;
-    --rojo:#D42027; --rojo-osc:#9E1B26; --rojo-cl:#F03340;
-    --blanco:#F5F5F5; --acero:#AEB6BF; --acero-2:#7C8794; --linea:rgba(255,255,255,.1);
-    --wa:#25d366; --radius:14px;
+    --bg:#212120; --bg-2:#1A1A19; --bg-3:#2B2B2A; --line:rgba(255,255,255,.12);
+    --rojo:#B01E24; --rojo-cl:#D9272E; --txt:#F4F4F4; --mut:#A7A9A8; --mut-2:#77797A;
+    --wa:#25d366; --maxw:1180px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:'Inter',system-ui,sans-serif;color:var(--blanco);background:var(--carbon);line-height:1.6}
-  h1,h2,h3,.brand,.btn,.stat b,.wordmark{font-family:'Saira Condensed',sans-serif;letter-spacing:.5px}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 30px;min-height:48px;border-radius:6px;font-weight:700;text-decoration:none;transition:transform .15s,box-shadow .15s,background .15s;font-size:1.12rem;text-transform:uppercase;line-height:1.1}
-  .btn:hover{transform:translateY(-2px)}
-  .btn svg{width:20px;height:20px;fill:currentColor;flex:none}
-  .btn-wa{background:var(--wa);color:#06381c;box-shadow:0 6px 20px rgba(37,211,102,.3)}
-  .btn-rojo{background:var(--rojo);color:#fff;box-shadow:0 6px 20px rgba(212,32,39,.35)}
-  .btn-rojo:hover{background:var(--rojo-cl)}
-  .btn-linea{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4)}
-  .btn-linea:hover{background:#fff;color:var(--carbon)}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.55;font-weight:400;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  img.media{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.6,.2,1)}
 
-  .logo{display:block;height:52px;width:auto}
-  footer .logo{height:96px;margin:0 auto 14px}
-
-  img.media{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 34px;min-height:46px;border-radius:100px;font-weight:600;text-decoration:none;font-size:.98rem;transition:.2s;letter-spacing:.2px}
+  .btn svg{width:18px;height:18px;fill:currentColor;flex:none}
+  .btn-wa{background:var(--wa);color:#06381c}
+  .btn-wa:hover{filter:brightness(1.07)}
+  .btn-light{background:rgba(244,244,244,.95);color:#111}
+  .btn-light:hover{background:#fff}
+  .btn-ghost{background:rgba(255,255,255,.08);color:var(--txt);backdrop-filter:blur(6px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.16)}
 
   .reveal{opacity:1}
-  .has-io .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+  .has-io .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
   .has-io .reveal.in{opacity:1;transform:none}
-  @media(prefers-reduced-motion:reduce){.has-io .reveal{opacity:1;transform:none;transition:none}.btn:hover{transform:none}}
+  @media(prefers-reduced-motion:reduce){.has-io .reveal{opacity:1;transform:none;transition:none}}
 
-  /* speed-lines divider (motivo del logo) */
-  .speed{height:5px;background:linear-gradient(90deg,var(--rojo) 0 22%,transparent 22% 26%,var(--rojo) 26% 42%,transparent 42% 48%,var(--rojo) 48% 100%);opacity:.9}
+  /* NAV — minimal, transparente */
+  nav{position:fixed;top:0;left:0;right:0;z-index:30;transition:background .3s}
+  nav.solid{background:rgba(33,33,32,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+  nav .logo{height:40px}
+  .nav-actions{display:flex;gap:10px;align-items:center}
+  .nav-actions .btn{padding:9px 22px;min-height:38px;font-size:.9rem}
+  .nav-tel{color:var(--txt);text-decoration:none;font-weight:600;font-size:.95rem;opacity:.9}
+  @media(max-width:640px){.nav-tel{display:none}}
 
-  .topbar{background:#0F1115;color:var(--acero);font-size:.86rem;padding:7px 0}
-  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-  .topbar a{color:#fff;text-decoration:none;font-weight:700}
+  /* HERO — full-screen, el logo como protagonista sobre el mismo fondo */
+  .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 24px 60px;position:relative}
+  .hero .logo-big{width:min(680px,86vw);height:auto;display:block;margin-bottom:8px;filter:drop-shadow(0 20px 60px rgba(0,0,0,.5))}
+  .hero .tagline{font-size:clamp(1.05rem,2.4vw,1.5rem);font-weight:300;color:var(--mut);max-width:600px;margin:6px auto 30px;letter-spacing:.3px}
+  .hero .rate{display:inline-flex;align-items:center;gap:10px;font-size:.9rem;color:var(--mut);margin-bottom:34px;letter-spacing:.5px}
+  .hero .rate b{color:var(--txt);font-weight:600}
+  .hero .rate .s{color:#E8B923;letter-spacing:2px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+  .scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:var(--mut-2);font-size:.75rem;letter-spacing:2px;text-transform:uppercase;animation:bob 2s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
 
-  nav{position:sticky;top:0;background:rgba(22,24,29,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea);z-index:20}
-  nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:8px 20px;gap:10px;flex-wrap:wrap}
-  .nav-actions{display:flex;gap:10px;flex-wrap:wrap}
-  .nav-actions .btn{padding:10px 18px;font-size:.95rem;min-height:42px}
+  /* FRANJA FULL-BLEED con foto (estilo Tesla product shot) */
+  .feature{position:relative;height:88vh;min-height:520px;display:flex;align-items:flex-end;justify-content:center;text-align:center;overflow:hidden}
+  .feature .bg{position:absolute;inset:0}
+  .feature .bg img{width:100%;height:100%;object-fit:cover}
+  .feature .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,33,32,.45) 0%,transparent 30%,transparent 55%,rgba(33,33,32,.96) 100%)}
+  .feature .cap{position:relative;z-index:1;padding-bottom:8vh}
+  .feature h2{font-size:clamp(2rem,5.5vw,3.6rem);font-weight:600;letter-spacing:-.5px;margin-bottom:12px}
+  .feature p{color:var(--mut);font-weight:300;font-size:1.1rem;max-width:520px;margin:0 auto 24px}
+  .feature .hero-ctas{justify-content:center}
 
-  /* HERO full-bleed con foto de fachada */
-  header{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden}
-  header .bg{position:absolute;inset:0;z-index:0}
-  header .bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.2)}
-  header .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,17,21,.96) 0%,rgba(15,17,21,.82) 45%,rgba(15,17,21,.55) 100%)}
-  header .wrap{position:relative;z-index:1;padding-top:40px;padding-bottom:40px}
-  .badge-rate{display:inline-flex;gap:8px;align-items:center;background:var(--rojo);color:#fff;padding:6px 16px;border-radius:4px;font-weight:700;font-size:.9rem;letter-spacing:.5px;margin-bottom:22px;text-transform:uppercase}
-  header h1{font-size:clamp(2.6rem,7vw,5rem);font-weight:800;line-height:.95;text-transform:uppercase;font-style:italic;margin-bottom:14px}
-  header h1 span{color:var(--rojo)}
-  header .lead{font-size:1.2rem;color:var(--acero);max-width:440px;margin-bottom:30px}
-  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-  .hero-tel{margin-top:20px;font-size:.95rem;color:var(--acero)}
-  .hero-tel a{color:#fff;font-family:'Saira Condensed';font-weight:700;text-decoration:none;font-size:1.5rem;letter-spacing:1px}
+  section{padding:110px 0}
+  .center{text-align:center;max-width:680px;margin:0 auto}
+  .eyebrow{color:var(--rojo);font-weight:600;font-size:.82rem;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:16px}
+  h2.big{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:600;letter-spacing:-.6px;line-height:1.08}
+  .lead{color:var(--mut);font-weight:300;font-size:1.12rem;margin-top:16px}
 
-  /* STATS band */
-  .stats{background:var(--rojo)}
-  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:20px;text-align:center}
-  .stat b{display:block;font-size:2.1rem;font-weight:800;line-height:1;font-style:italic}
-  .stat span{font-size:.72rem;text-transform:uppercase;letter-spacing:1.4px;opacity:.92}
-  @media(max-width:600px){.stats .wrap{grid-template-columns:repeat(2,1fr);gap:16px}}
+  /* SERVICIOS — grid limpio, mucho aire */
+  .servicios{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:60px}
+  @media(max-width:760px){.servicios{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:440px){.servicios{grid-template-columns:1fr}}
+  .serv{background:var(--bg);padding:38px 30px;transition:background .25s}
+  .serv:hover{background:var(--bg-3)}
+  .serv svg{width:30px;height:30px;fill:var(--rojo);margin-bottom:16px}
+  .serv b{display:block;font-weight:600;font-size:1.12rem;margin-bottom:6px}
+  .serv span{color:var(--mut);font-size:.92rem;font-weight:300}
 
-  section{padding:70px 0}
-  .kicker{color:var(--rojo);font-family:'Saira Condensed';font-weight:700;text-transform:uppercase;letter-spacing:3px;font-size:.9rem;text-align:center;margin-bottom:8px}
-  h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;text-align:center;text-transform:uppercase;font-style:italic;margin-bottom:40px}
+  /* GALERÍA — mosaico grande full-bleed */
+  .galeria{padding:110px 0 60px}
+  .mosaico{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:200px;gap:12px;margin-top:56px}
+  .mosaico a{overflow:hidden;border-radius:14px;position:relative;background:var(--bg-3)}
+  .mosaico a:hover img{transform:scale(1.06)}
+  .m-big{grid-column:span 3;grid-row:span 2}
+  .m-w{grid-column:span 3}
+  .m-2{grid-column:span 2}
+  .m-tall{grid-column:span 2;grid-row:span 2}
+  @media(max-width:900px){.mosaico{grid-template-columns:repeat(4,1fr);grid-auto-rows:160px}.m-big{grid-column:span 2;grid-row:span 2}.m-w{grid-column:span 2}.m-tall{grid-column:span 2;grid-row:span 1}.m-2{grid-column:span 2}}
+  @media(max-width:560px){.mosaico{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}.m-big,.m-w,.m-tall,.m-2{grid-column:span 2;grid-row:span 1}}
 
-  /* SERVICIOS — chips compactos, poco texto */
-  .servicios{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-  .serv{display:flex;align-items:center;gap:14px;background:var(--carbon-2);border:1px solid var(--linea);border-radius:10px;padding:18px 20px;transition:.2s}
-  .serv:hover{border-color:var(--rojo);background:var(--carbon-3);transform:translateY(-3px)}
-  .serv svg{width:30px;height:30px;fill:var(--rojo);flex:none}
-  .serv b{font-family:'Saira Condensed';font-weight:700;text-transform:uppercase;font-size:1.15rem}
-
-  /* GALERÍA MOSAICO — la estrella */
-  .galeria{padding-top:0}
-  .mosaico{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px}
-  .mosaico a{overflow:hidden;border-radius:10px;position:relative;background:var(--carbon-2)}
-  .mosaico a::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px var(--linea);border-radius:10px}
-  .mosaico a:hover img{transform:scale(1.08)}
-  .mosaico .big{grid-column:span 2;grid-row:span 2}
-  .mosaico .wide{grid-column:span 2}
-  .mosaico .tall{grid-row:span 2}
-  @media(max-width:820px){.mosaico{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.mosaico .big{grid-column:span 2;grid-row:span 2}.mosaico .wide{grid-column:span 2}.mosaico .tall{grid-row:span 1}}
-  .galeria-cta{text-align:center;margin-top:28px}
+  /* STATS minimal */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;text-align:center;margin-top:70px}
+  @media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr);gap:44px}}
+  .stat b{display:block;font-size:clamp(2.2rem,4vw,3.2rem);font-weight:600;letter-spacing:-1px}
+  .stat span{color:var(--mut);font-size:.82rem;letter-spacing:1.5px;text-transform:uppercase;margin-top:6px;display:block}
+  .stat.r b{color:var(--rojo)}
 
   /* TESTIMONIOS */
-  .alt{background:var(--carbon-2)}
-  .tgrid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-  .testi{background:var(--carbon);border:1px solid var(--linea);border-left:4px solid var(--rojo);border-radius:10px;padding:24px}
-  .testi .stars{color:#FFB100;letter-spacing:3px;margin-bottom:10px}
-  .testi p{font-style:italic;color:#e8e8e8;margin-bottom:12px}
-  .testi .autor{font-weight:600;font-size:.88rem;color:var(--acero-2)}
+  .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+  @media(max-width:820px){.tgrid{grid-template-columns:1fr}}
+  .testi{border:1px solid var(--line);border-radius:16px;padding:32px;background:var(--bg-2)}
+  .testi .s{color:#E8B923;letter-spacing:2px;font-size:.9rem;margin-bottom:14px}
+  .testi p{font-weight:300;font-size:1.05rem;line-height:1.6;margin-bottom:16px}
+  .testi .a{color:var(--mut);font-size:.88rem;font-weight:500}
 
   /* UBICACIÓN */
-  .ubic{display:grid;gap:26px;grid-template-columns:1fr 1fr;align-items:stretch}
+  .ubic{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:56px}
   @media(max-width:760px){.ubic{grid-template-columns:1fr}}
-  .ubic iframe{width:100%;min-height:340px;border:0;border-radius:var(--radius)}
-  .ubic-info{display:flex;flex-direction:column;justify-content:center}
-  .dato{margin-bottom:18px}
-  .dato strong{display:block;color:var(--rojo);font-size:.78rem;text-transform:uppercase;letter-spacing:1.4px;font-family:'Saira Condensed';font-weight:700;margin-bottom:2px}
-  .dato a,.dato address{color:#fff;font-weight:600;text-decoration:none;font-size:1.1rem;font-style:normal}
+  .ubic iframe{width:100%;min-height:380px;border:0;filter:grayscale(.3) invert(.9) hue-rotate(180deg) contrast(.9)}
+  .ubic-info{padding:48px;display:flex;flex-direction:column;justify-content:center;background:var(--bg-2)}
+  .dato{margin-bottom:24px}
+  .dato strong{display:block;color:var(--mut-2);font-size:.76rem;text-transform:uppercase;letter-spacing:1.6px;margin-bottom:5px}
+  .dato a,.dato address{color:var(--txt);font-weight:500;text-decoration:none;font-size:1.15rem;font-style:normal}
+  .dato a:hover{color:var(--rojo-cl)}
 
-  /* CTA final con foto de fondo */
-  .cta{position:relative;text-align:center;overflow:hidden}
-  .cta .bg{position:absolute;inset:0;z-index:0}
-  .cta .bg img{width:100%;height:100%;object-fit:cover}
-  .cta .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(212,32,39,.92),rgba(15,17,21,.9))}
-  .cta .wrap{position:relative;z-index:1}
-  .cta h2{margin-bottom:12px}
-  .cta p{color:rgba(255,255,255,.9);margin-bottom:26px;font-size:1.1rem}
-  .cta .hero-ctas{justify-content:center}
+  /* CTA final full-bleed */
+  .closer{position:relative;min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+  .closer .bg{position:absolute;inset:0}
+  .closer .bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3)}
+  .closer .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,33,32,.7),rgba(33,33,32,.92))}
+  .closer .in-{position:relative;z-index:1;padding:24px}
+  .closer h2{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;letter-spacing:-.6px;margin-bottom:14px}
+  .closer p{color:var(--mut);font-weight:300;margin-bottom:28px;font-size:1.1rem}
 
-  footer{background:#0F1115;color:var(--acero-2);text-align:center;padding:36px 20px;font-size:.85rem}
-  footer a{color:#fff;text-decoration:none;font-weight:600}
+  footer{border-top:1px solid var(--line);padding:48px 24px;text-align:center}
+  footer .logo{height:70px;margin:0 auto 18px;display:block}
+  footer p{color:var(--mut-2);font-size:.85rem;line-height:1.8}
+  footer a{color:var(--mut);text-decoration:none}
+  footer a:hover{color:var(--txt)}
 
-  .flotantes{position:fixed;bottom:22px;right:22px;display:flex;gap:12px;z-index:30}
-  .flotantes a{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(0,0,0,.5);transition:transform .15s}
-  .flotantes a:hover{transform:scale(1.08)}
-  .fl-tel{background:var(--rojo)} .fl-tel svg{fill:#fff}
-  .fl-wa{background:var(--wa)} .fl-wa svg{fill:#fff}
-  .flotantes svg{width:30px;height:30px}
-  @media(max-width:820px){.nav-actions .btn .btn-txt{display:none}.fl-tel{display:none}.topbar span:last-child{display:none}footer{padding-bottom:96px}}
+  .fab{position:fixed;bottom:24px;right:24px;z-index:40;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.4);transition:transform .15s}
+  .fab:hover{transform:scale(1.08)}
+  .fab svg{width:32px;height:32px;fill:#fff}
 </style>
 </head>
 <body id="top">
 
-<!-- Logo MARPA recreado en SVG (silueta deportiva + wordmark rojo itálico) -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <g id="marpa-mark">
-      <!-- carrocería deportiva en líneas -->
-      <path d="M8 46 C24 30 44 22 70 22 C112 22 150 30 176 44 L196 46" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
-      <path d="M60 24 C70 15 104 13 120 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
-      <line x1="92" y1="16" x2="92" y2="27" stroke="#fff" stroke-width="3"/>
-      <path d="M120 42 h34 M126 49 h30 M134 56 h22" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="150" cy="52" r="15" fill="none" stroke="#fff" stroke-width="3.4"/>
-      <circle cx="150" cy="52" r="6" fill="#fff"/>
-      <text x="6" y="86" font-family="'Saira Condensed',sans-serif" font-style="italic" font-weight="800" font-size="46" fill="#D42027" stroke="#fff" stroke-width="1.2" letter-spacing="1">MARPA</text>
-      <text x="10" y="24" font-family="'Saira Condensed',sans-serif" font-style="italic" font-weight="700" font-size="17" fill="#D42027">servicio</text>
-      <text x="66" y="104" font-family="'Saira Condensed',sans-serif" font-style="italic" font-weight="700" font-size="17" fill="#D42027" letter-spacing="3">automotriz</text>
-    </g>
-  </defs>
-</svg>
-
-<div class="topbar"><div class="wrap">
-  <span>Cuauhtémoc 59, Col. Analco, Guadalajara</span>
-  <span>Tel. <a href="tel:+523312205133">33 1220 5133</a></span>
-</div></div>
-
-<nav><div class="wrap">
+<nav id="nav"><div class="wrap">
   <a href="#top" aria-label="Servicio Marpa Automotriz — inicio">
-    <svg class="logo" viewBox="0 0 210 112" aria-hidden="true"><use href="#marpa-mark"/></svg>
+    <img class="logo" src="logo-marpa.png" alt="Servicio Marpa Automotriz">
   </a>
   <div class="nav-actions">
-    <a class="btn btn-linea" href="tel:+523312205133"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span class="btn-txt">33 1220 5133</span></a>
-    <a class="btn btn-wa" href="https://wa.me/523312205133?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20cita.%20Mi%20auto%3A%20%5Bmarca%2Fmodelo%5D%20-%20necesito%3A%20"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3z"/></svg><span class="btn-txt">WhatsApp</span></a>
+    <a class="nav-tel" href="tel:+523312205133">33 1220 5133</a>
+    <a class="btn btn-light" href="https://wa.me/523312205133?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20cita.%20Mi%20auto%3A%20%5Bmarca%2Fmodelo%5D%20-%20necesito%3A%20">Agendar</a>
   </div>
 </div></nav>
 
 <main>
-<header>
-  <div class="bg"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGt1LffiEfW3S2Ortm2qmHPwwsaCuuU0FVE3JYVZILAdbsiNZ0sNmPwotVRT_U4nqX3KVHcGLNU-rQwWHRzhkNgaIZXOumF3Mm_LgXrPjy6RTIlIdU_uczVjVd3cEsI8Xjpg992xbgU8sS2=w1600-k-no" alt="Interior del taller Servicio Marpa" onerror="this.parentNode.style.background='var(--carbon-2)';this.remove()"></div>
-  <div class="wrap">
-    <span class="badge-rate">★ 4.9 en Google · 62 reseñas</span>
-    <h1>Servicio <span>Marpa</span><br>Automotriz</h1>
-    <p class="lead">Especialistas en fuel injection, motores y transmisiones. Diagnóstico honesto en el corazón de Analco.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-wa" href="https://wa.me/523312205133?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20cita.%20Mi%20auto%3A%20%5Bmarca%2Fmodelo%5D%20-%20necesito%3A%20"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3z"/></svg>Agenda por WhatsApp</a>
-      <a class="btn btn-linea" href="tel:+523312205133">Llamar</a>
-    </div>
-    <div class="hero-tel">Atención directa: <a href="tel:+523312205133">33 1220 5133</a></div>
+<!-- HERO: el logo sobre el mismo fondo, se funde -->
+<section class="hero">
+  <img class="logo-big" src="logo-marpa.png" alt="Servicio Marpa Automotriz — Taller mecánico en Guadalajara">
+  <div class="rate"><span class="s">★★★★★</span> <b>4.9</b> · 62 reseñas en Google</div>
+  <p class="tagline">Especialistas en fuel injection, motores y transmisiones. Diagnóstico honesto en el corazón de Analco.</p>
+  <div class="hero-ctas">
+    <a class="btn btn-wa" href="https://wa.me/523312205133?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20cita.%20Mi%20auto%3A%20%5Bmarca%2Fmodelo%5D%20-%20necesito%3A%20"><svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3z"/></svg>Agenda por WhatsApp</a>
+    <a class="btn btn-ghost" href="tel:+523312205133">Llamar ahora</a>
   </div>
-</header>
-<div class="speed"></div>
+  <span class="scroll-cue">Descubre más ↓</span>
+</section>
 
-<div class="stats"><div class="wrap">
-  <div class="stat"><b>4.9★</b><span>en Google</span></div>
-  <div class="stat"><b>62</b><span>reseñas</span></div>
-  <div class="stat"><b>Fuel<br>Injection</b><span>especialistas</span></div>
-  <div class="stat"><b>0</b><span>sorpresas al cobrar</span></div>
-</div></div>
+<!-- FEATURE full-bleed: taller -->
+<section class="feature">
+  <div class="bg"><img class="media" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGt1LffiEfW3S2Ortm2qmHPwwsaCuuU0FVE3JYVZILAdbsiNZ0sNmPwotVRT_U4nqX3KVHcGLNU-rQwWHRzhkNgaIZXOumF3Mm_LgXrPjy6RTIlIdU_uczVjVd3cEsI8Xjpg992xbgU8sS2=w1600-k-no" alt="Interior del taller Servicio Marpa" onerror="this.remove()"></div>
+  <div class="cap reveal">
+    <h2>Mecánica de precisión</h2>
+    <p>Encontramos la falla que otros no. Te explicamos todo, con precios justos.</p>
+    <div class="hero-ctas"><a class="btn btn-light" href="https://wa.me/523312205133?text=Hola%2C%20quiero%20una%20cita.">Agendar diagnóstico</a></div>
+  </div>
+</section>
 
-<section><div class="wrap">
-  <div class="kicker">Lo que hacemos</div>
-  <h2>Servicios</h2>
-  <div class="servicios">
-    <div class="serv"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 4a6 6 0 0 1 6 6h-2a4 4 0 0 0-4-4V6z"/></svg><b>Fuel Injection</b></div>
-    <div class="serv"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-2h6l2 2h3v8h-3l-2 2H9l-2-2H4V8zm8 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg><b>Motores</b></div>
-    <div class="serv"><svg viewBox="0 0 24 24"><path d="M5 6h14v3H5V6zm0 5h14v3H5v-3zm0 5h9v2H5v-2z"/></svg><b>Transmisiones</b></div>
-    <div class="serv"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg><b>Afinación</b></div>
-    <div class="serv"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/></svg><b>Frenos y suspensión</b></div>
-    <div class="serv"><svg viewBox="0 0 24 24"><path d="M22 9l-2-1V6l-2-1-1-2h-2l-1-1h-4L9 3H7L6 5 4 6v2L2 9v6l2 1v2l2 1 1 2h2l1 1h4l1-1h2l1-2 2-1v-2l2-1V9zm-10 7a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg><b>Mecánica general</b></div>
+<!-- SERVICIOS -->
+<section><div class="wrap center">
+  <div class="eyebrow reveal">Lo que hacemos</div>
+  <h2 class="big reveal">Servicio completo</h2>
+</div>
+<div class="wrap">
+  <div class="servicios reveal">
+    <div class="serv"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 4a6 6 0 0 1 6 6h-2a4 4 0 0 0-4-4V6z"/></svg><b>Fuel Injection</b><span>Diagnóstico y servicio de inyección electrónica.</span></div>
+    <div class="serv"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-2h6l2 2h3v8h-3l-2 2H9l-2-2H4V8zm8 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg><b>Motores</b><span>Reparación y reconstrucción para todas las marcas.</span></div>
+    <div class="serv"><svg viewBox="0 0 24 24"><path d="M5 6h14v3H5V6zm0 5h14v3H5v-3zm0 5h9v2H5v-2z"/></svg><b>Transmisiones</b><span>Estándar y automática.</span></div>
+    <div class="serv"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg><b>Afinación</b><span>Recupera rendimiento y ahorro.</span></div>
+    <div class="serv"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/></svg><b>Frenos y suspensión</b><span>Seguridad y confort.</span></div>
+    <div class="serv"><svg viewBox="0 0 24 24"><path d="M22 9l-2-1V6l-2-1-1-2h-2l-1-1h-4L9 3H7L6 5 4 6v2L2 9v6l2 1v2l2 1 1 2h2l1 1h4l1-1h2l1-2 2-1v-2l2-1V9zm-10 7a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg><b>Mecánica general</b><span>Mantenimiento preventivo.</span></div>
   </div>
 </div></section>
 
-<div class="speed"></div>
-<section class="galeria alt"><div class="wrap">
-  <div class="kicker">Nuestro trabajo</div>
-  <h2>El taller por dentro</h2>
+<!-- GALERÍA mosaico -->
+<section class="galeria"><div class="wrap">
+  <div class="center">
+    <div class="eyebrow reveal">Nuestro trabajo</div>
+    <h2 class="big reveal">El taller por dentro</h2>
+  </div>
   <div class="mosaico reveal">
-    <a class="big" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF9olfA96Hq1Kj40-SnE4CNKutGchtBuPwSnXqswgWBlEEZCplUSBXC4AN6Lt0jfSOLwBw0-dXPgMjPcQbqONpgM-hwKCbVQNNb9kWw0Lavx6FrqJmb1yc76aCXV5g9BC6aoKHNeqJ-_JiO=w1000-k-no" alt="Trabajo de clutch y transmisión" onerror="this.remove()"></a>
-    <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGW7y3CaBMzVAHLE-x0-XGpxbXqOJa9lL2LY_O6v3GGlE7VMYTVPqs7MC7fRHgBRWLiLgjtXltUVq247McEgNO0BYRzGdXKztsjzHsEgXKchIiyKl1_He_3wRwv0uifUSook54lhIhLtwAA=w600-k-no" alt="Reparación de motor" onerror="this.remove()"></a>
-    <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEj8NQwnvcQ4P11vv4d3qdN1b7BYBvK027epsDBCI0VchsSZblIu1t0Rn6xuCmIJvnWXxfl6QSH9zWIroS6DXyZOY1Djo08Yjr_0KeD9vGovt8rnV2RU04Pvnw5z9qSuFZMka7CDK_X65tY=w600-k-no" alt="Detalle de reparación" onerror="this.remove()"></a>
-    <a class="wide" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFyUFFLElBV1UiDQ72Lg5Ax1mG26tYNC9-R2CUcHFOdduG-IkV3b-pKVSwQ0gtoMT2oFCMY7fAce_NuAn_VFAnP3mA_awfxUzpZAAsvTaOd1R6CRsqCUyL2epAN0shjOEAZu1wj=w1000-k-no" alt="Auto de cliente en el taller" onerror="this.remove()"></a>
-    <a class="tall" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGlAJAHBj7nM8i89FDQJAGXvv3nk48BrBvQ9phZydAWXaVTBU9SZU6-DO_kdRE9Pg3KT0l0ImzrU2d_wSWG4cHgW-89akOncO2x7qqUfDgmtzruryXOjgouyLXdkQurMCTA1_B-=w600-k-no" alt="Servicio en rampa" onerror="this.remove()"></a>
-    <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHEDn1bRUMtIrJIHlDNhLmDUE2gwjaCs54iG6U53Sf91Vnt5IzpzH6-xGUPVlLYQG5xhZmO4yCUExOdDakLWs1mvIVY1ZSabRUxZSlmT2pcyFlm9oRfkBNBaD4pp03kL3CFF7N9WA=w600-k-no" alt="Reparación en proceso" onerror="this.remove()"></a>
-    <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGhJSOTpOgSgd0CR4mZnNvuk5HPeeMowD7ze4gzABcZzYCpKDKdYJbfBhOyYC1Wo27ajey3Ooy_oGGFSlbO_eup3eTIwgb1e6CAZF6N72HRP8STCyfZswuH2iIfOZqEkvHqry415A=w600-k-no" alt="Trabajo automotriz" onerror="this.remove()"></a>
-    <a class="wide" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4fsxnFBGXVaDn5gBB1vifmcuyP_Vtt0leCWgXEX4T8MSncbruWPoQszSvn3aE8cp45UzCl5sz-32i58wzo6fkCF5NnDuMfJlCE8kvrl_x5nTAQ2q0Hu9DO6J6-E3G9FRjtT67JABFv6O_=w1000-k-no" alt="Auto en servicio" onerror="this.remove()"></a>
-    <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFrD_0U8K5sLUWTMUHbaum1wgT_jQwinAW7-P6gfzse-g1KEziktz7Do50QWxQqajo3mJk0LPP_IR1FrXPTCjeynqJ23P5gzyEI1bW0VgMNj07qy74YL0fOvwh89i5BEJ813wSN=w600-k-no" alt="Detalle mecánico" onerror="this.remove()"></a>
-    <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHRrvdH4qFW6ZgpckDEJ31Z_fh4IYQMq3BO78IOSkh4yim9SZWVcILrREjoSUnE8lLEYZWcYZ6cjQpBDjsh6I21F6a4LLb6Bk7o4vuiUx6mgPvYU0-XQgzT2RKEBNAnKxV1gf9cwfQTOXw=w600-k-no" alt="Frenos y suspensión" onerror="this.remove()"></a>
+    <a class="m-big" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF9olfA96Hq1Kj40-SnE4CNKutGchtBuPwSnXqswgWBlEEZCplUSBXC4AN6Lt0jfSOLwBw0-dXPgMjPcQbqONpgM-hwKCbVQNNb9kWw0Lavx6FrqJmb1yc76aCXV5g9BC6aoKHNeqJ-_JiO=w1200-k-no" alt="Trabajo de motor" onerror="this.remove()"></a>
+    <a class="m-2" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGW7y3CaBMzVAHLE-x0-XGpxbXqOJa9lL2LY_O6v3GGlE7VMYTVPqs7MC7fRHgBRWLiLgjtXltUVq247McEgNO0BYRzGdXKztsjzHsEgXKchIiyKl1_He_3wRwv0uifUSook54lhIhLtwAA=w800-k-no" alt="Reparación" onerror="this.remove()"></a>
+    <a class="m-tall" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGlAJAHBj7nM8i89FDQJAGXvv3nk48BrBvQ9phZydAWXaVTBU9SZU6-DO_kdRE9Pg3KT0l0ImzrU2d_wSWG4cHgW-89akOncO2x7qqUfDgmtzruryXOjgouyLXdkQurMCTA1_B-=w800-k-no" alt="Servicio en rampa" onerror="this.remove()"></a>
+    <a class="m-2" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEj8NQwnvcQ4P11vv4d3qdN1b7BYBvK027epsDBCI0VchsSZblIu1t0Rn6xuCmIJvnWXxfl6QSH9zWIroS6DXyZOY1Djo08Yjr_0KeD9vGovt8rnV2RU04Pvnw5z9qSuFZMka7CDK_X65tY=w800-k-no" alt="Detalle" onerror="this.remove()"></a>
+    <a class="m-w" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFyUFFLElBV1UiDQ72Lg5Ax1mG26tYNC9-R2CUcHFOdduG-IkV3b-pKVSwQ0gtoMT2oFCMY7fAce_NuAn_VFAnP3mA_awfxUzpZAAsvTaOd1R6CRsqCUyL2epAN0shjOEAZu1wj=w1200-k-no" alt="Auto de cliente" onerror="this.remove()"></a>
+    <a class="m-2" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHEDn1bRUMtIrJIHlDNhLmDUE2gwjaCs54iG6U53Sf91Vnt5IzpzH6-xGUPVlLYQG5xhZmO4yCUExOdDakLWs1mvIVY1ZSabRUxZSlmT2pcyFlm9oRfkBNBaD4pp03kL3CFF7N9WA=w800-k-no" alt="En proceso" onerror="this.remove()"></a>
+    <a class="m-2" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGhJSOTpOgSgd0CR4mZnNvuk5HPeeMowD7ze4gzABcZzYCpKDKdYJbfBhOyYC1Wo27ajey3Ooy_oGGFSlbO_eup3eTIwgb1e6CAZF6N72HRP8STCyfZswuH2iIfOZqEkvHqry415A=w800-k-no" alt="Trabajo automotriz" onerror="this.remove()"></a>
+    <a class="m-big" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4fsxnFBGXVaDn5gBB1vifmcuyP_Vtt0leCWgXEX4T8MSncbruWPoQszSvn3aE8cp45UzCl5sz-32i58wzo6fkCF5NnDuMfJlCE8kvrl_x5nTAQ2q0Hu9DO6J6-E3G9FRjtT67JABFv6O_=w1200-k-no" alt="Auto en servicio" onerror="this.remove()"></a>
+    <a class="m-2" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFrD_0U8K5sLUWTMUHbaum1wgT_jQwinAW7-P6gfzse-g1KEziktz7Do50QWxQqajo3mJk0LPP_IR1FrXPTCjeynqJ23P5gzyEI1bW0VgMNj07qy74YL0fOvwh89i5BEJ813wSN=w800-k-no" alt="Detalle mecánico" onerror="this.remove()"></a>
+    <a class="m-2" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara"><img class="media" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHRrvdH4qFW6ZgpckDEJ31Z_fh4IYQMq3BO78IOSkh4yim9SZWVcILrREjoSUnE8lLEYZWcYZ6cjQpBDjsh6I21F6a4LLb6Bk7o4vuiUx6mgPvYU0-XQgzT2RKEBNAnKxV1gf9cwfQTOXw=w800-k-no" alt="Frenos y suspensión" onerror="this.remove()"></a>
   </div>
-  <div class="galeria-cta"><a class="btn btn-rojo" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara">Ver las 24 fotos en Google</a></div>
+  <div class="center" style="margin-top:40px"><a class="btn btn-ghost reveal" target="_blank" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara">Ver las 24 fotos en Google</a></div>
 </div></section>
 
-<div class="speed"></div>
+<!-- STATS -->
+<section style="padding-top:0"><div class="wrap">
+  <div class="stats reveal">
+    <div class="stat r"><b>4.9★</b><span>en Google</span></div>
+    <div class="stat"><b>62</b><span>Reseñas</span></div>
+    <div class="stat"><b>100%</b><span>Diagnóstico antes de cobrar</span></div>
+    <div class="stat"><b>Analco</b><span>Guadalajara</span></div>
+  </div>
+</div></section>
+
+<!-- TESTIMONIOS -->
 <section><div class="wrap">
-  <div class="kicker">Reseñas reales de Google</div>
-  <h2>Nos recomiendan</h2>
+  <div class="center">
+    <div class="eyebrow reveal">Reseñas reales de Google</div>
+    <h2 class="big reveal">Nos recomiendan</h2>
+  </div>
   <div class="tgrid">
-    <div class="testi reveal"><div class="stars">★★★★★</div><p>"Llevaba mucho tiempo con una falla intermitente sin diagnóstico. Aquí por fin la encontraron. Explican todo y los precios son muy razonables."</p><div class="autor">Zaira V.</div></div>
-    <div class="testi reveal"><div class="stars">★★★★★</div><p>"No suelo compartir publicaciones, pero el crédito es merecido. Excelentes mecánicos y personas excepcionales."</p><div class="autor">Eduardo R.</div></div>
-    <div class="testi reveal"><div class="stars">★★★★★</div><p>"Mi hermana llegó muy angustiada por su vehículo y salió muy feliz. Excelente servicio."</p><div class="autor">Rodrigo J.</div></div>
+    <div class="testi reveal"><div class="s">★★★★★</div><p>"Llevaba mucho con una falla intermitente sin diagnóstico. Aquí por fin la encontraron. Explican todo y los precios son muy razonables."</p><div class="a">Zaira V.</div></div>
+    <div class="testi reveal"><div class="s">★★★★★</div><p>"No suelo compartir publicaciones, pero el crédito es merecido. Excelentes mecánicos y personas excepcionales."</p><div class="a">Eduardo R.</div></div>
+    <div class="testi reveal"><div class="s">★★★★★</div><p>"Mi hermana llegó muy angustiada por su vehículo y salió muy feliz. Excelente servicio."</p><div class="a">Rodrigo J.</div></div>
   </div>
 </div></section>
 
-<div class="speed"></div>
-<section class="alt"><div class="wrap">
-  <div class="kicker">Visítanos</div>
-  <h2>Dónde estamos</h2>
-  <div class="ubic">
+<!-- UBICACIÓN -->
+<section style="padding-top:0"><div class="wrap">
+  <div class="center">
+    <div class="eyebrow reveal">Visítanos</div>
+    <h2 class="big reveal">Dónde estamos</h2>
+  </div>
+  <div class="ubic reveal">
     <div class="ubic-info">
       <div class="dato"><strong>Dirección</strong><address>Cuauhtémoc 59, Col. Analco<br>44450 Guadalajara, Jalisco</address></div>
       <div class="dato"><strong>Teléfono y WhatsApp</strong><a href="tel:+523312205133">33 1220 5133</a></div>
-      <div class="dato"><strong>Citas</strong><span style="color:var(--acero)">Escríbenos por WhatsApp y te confirmamos horario.</span></div>
-      <div class="hero-ctas" style="margin-top:8px">
+      <div class="dato"><strong>Citas</strong><span style="color:var(--mut);font-weight:300">Escríbenos por WhatsApp y te confirmamos horario.</span></div>
+      <div class="hero-ctas" style="margin-top:6px">
         <a class="btn btn-wa" href="https://wa.me/523312205133?text=Hola%2C%20quiero%20agendar%20una%20cita.">Agendar</a>
-        <a class="btn btn-linea" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara">Cómo llegar</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=TALLER+MEC%C3%81NICO+MARPA+Cuauht%C3%A9moc+59+Guadalajara">Cómo llegar</a>
       </div>
     </div>
     <iframe loading="lazy" title="Mapa de Servicio Marpa" src="https://www.google.com/maps?q=TALLER%20MEC%C3%81NICO%20MARPA%20Cuauht%C3%A9moc%2059%20Guadalajara&output=embed"></iframe>
   </div>
 </div></section>
 
-<section class="cta">
-  <div class="bg"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4fsxnFBGXVaDn5gBB1vifmcuyP_Vtt0leCWgXEX4T8MSncbruWPoQszSvn3aE8cp45UzCl5sz-32i58wzo6fkCF5NnDuMfJlCE8kvrl_x5nTAQ2q0Hu9DO6J6-E3G9FRjtT67JABFv6O_=w1600-k-no" alt="" onerror="this.remove()"></div>
-  <div class="wrap">
+<!-- CLOSER -->
+<section class="closer">
+  <div class="bg"><img class="media" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFyUFFLElBV1UiDQ72Lg5Ax1mG26tYNC9-R2CUcHFOdduG-IkV3b-pKVSwQ0gtoMT2oFCMY7fAce_NuAn_VFAnP3mA_awfxUzpZAAsvTaOd1R6CRsqCUyL2epAN0shjOEAZu1wj=w1600-k-no" alt="" onerror="this.remove()"></div>
+  <div class="in-">
     <h2>Tu auto en manos honestas</h2>
     <p>Agenda hoy con el taller 4.9★ de Analco.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-wa" href="https://wa.me/523312205133?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20cita.%20Mi%20auto%3A%20%5Bmarca%2Fmodelo%5D%20-%20necesito%3A%20"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3z"/></svg>WhatsApp: 33 1220 5133</a>
-    </div>
+    <a class="btn btn-wa" href="https://wa.me/523312205133?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20cita.%20Mi%20auto%3A%20%5Bmarca%2Fmodelo%5D%20-%20necesito%3A%20"><svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3z"/></svg>WhatsApp: 33 1220 5133</a>
   </div>
 </section>
 
 </main>
 
 <footer>
-  <svg class="logo" viewBox="0 0 210 112" role="img" aria-label="Servicio Marpa Automotriz"><use href="#marpa-mark"/></svg>
-  © 2026 Servicio Marpa Automotriz · Cuauhtémoc 59, Col. Analco, Guadalajara · <a href="tel:+523312205133">33 1220 5133</a>
+  <img class="logo" src="logo-marpa.png" alt="Servicio Marpa Automotriz">
+  <p>Cuauhtémoc 59, Col. Analco, 44450 Guadalajara, Jalisco · <a href="tel:+523312205133">33 1220 5133</a><br>© 2026 Servicio Marpa Automotriz</p>
 </footer>
 
-<div class="flotantes">
-  <a class="fl-tel" href="tel:+523312205133" aria-label="Llamar"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></a>
-  <a class="fl-wa" href="https://wa.me/523312205133?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20cita." aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm5.9 16.9c-.3.8-1.5 1.5-2.4 1.7-.6.1-1.4.2-4.2-.9-3.5-1.5-5.8-5-6-5.3-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.6c.2 0 .5-.1.7.5l1 2.5c.1.2.2.5 0 .7l-.4.6-.6.6c-.2.2-.4.4-.2.7.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1l1.2-1.4c.3-.3.5-.3.8-.2l2.4 1.1c.4.2.6.3.7.5.1.1.1.7-.5 1.2z"/></svg></a>
-</div>
+<a class="fab" href="https://wa.me/523312205133?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20cita." aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm5.9 16.9c-.3.8-1.5 1.5-2.4 1.7-.6.1-1.4.2-4.2-.9-3.5-1.5-5.8-5-6-5.3-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.6c.2 0 .5-.1.7.5l1 2.5c.1.2.2.5 0 .7l-.4.6-.6.6c-.2.2-.4.4-.2.7.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1l1.2-1.4c.3-.3.5-.3.8-.2l2.4 1.1c.4.2.6.3.7.5.1.1.1.7-.5 1.2z"/></svg></a>
 
 <script>
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>40));
   if('IntersectionObserver' in window){
     document.documentElement.classList.add('has-io');
-    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   }
 </script>
